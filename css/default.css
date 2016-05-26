@@ -1,0 +1,26 @@
+html, body {
+  background-color: #323232;
+  color: white;
+}
+
+#content {
+	padding-top: 80px;
+}
+
+a:link {
+	color: yellow;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: orange;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+	background-color: transparent;
+	text-decoration: underline;
+}

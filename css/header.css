@@ -1,0 +1,122 @@
+header {
+  position: fixed;
+  background-color: #323232;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  float: left;
+}
+
+#headerTitle {
+  padding: 5px 20px;
+  margin: 0px;
+}
+
+.menu-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  top: 0;
+}
+
+.menu-item, .menu-dropdown {
+  border-right: 1px solid #323232;
+  float: left;
+}
+
+.menu-dropdown a {
+  color: black;
+}
+
+.menu-item a, .dropbtn{
+  display: block;
+  background-color: white;
+  color: #333;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+.menu-item a:hover, .menu-dropdown:hover .dropbtn {
+  background-color: #aaaaaa;
+  color:#333;
+  text-decoration: none;
+}
+
+.menu-dropdown {
+  display: inline-block;
+}
+
+.menu-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.menu-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.menu-active a {
+  background-color: #00802b;
+  color: white;
+}
+
+.menu-dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.menu-dropdown:hover .menu-dropdown-content {
+    display: block;
+}
+
+/* Everything from here down was added in an effor to add responsiveness*/
+.menu-list li.icon {display: none;}
+.menu-list li.icon-label {display: none;}
+
+@media screen and (max-width: 545px) {
+  .menu-list li:not(:first-child) {display: none;}
+  .menu-list li.icon {
+    float: right;
+    display: inline-block;
+  }
+  .menu-list li.icon-label {
+    float: left;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .menu-list.responsive {position: relative;}
+  .menu-list.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu-list.responsive li.icon-label {
+    position: absolute;
+    left: 58px;
+    top: 0;
+  }
+  .menu-list.responsive li {
+    float: none;
+    display: inline;
+  }
+  .menu-list.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  .menu-dropdown-content.responsive {
+    display: inline-block;
+  }
+}

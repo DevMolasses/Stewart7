@@ -7,35 +7,68 @@
     <meta name="web designer" content="Trever Stewart"/>
     <meta name="email" content="devmolasses@gmail.com"/>
     <title>Trever's Page</title>
+
+    <link rel="stylesheet" type="css/tect" href="../../css/default.css">
+    <link rel="stylesheet" type="css/text" href="../../css/header.css"/>
 </head>
 <body>
-    <style>
-        body{background-color:rgb(50,50,50);color:white;}
-        a:link{color:yellow;background-color:transparent;text-decoration:none;}
-        a:visited{color:orange;background-color:transparent;text-decoration:none;}
-        a:hover(color:red;background-color:transparent;text-decoration:underline;}
-    </style>
-    <header>
-        <h1>Trever's Page</h1>
-    </header>
-    
+<header>
+  <h1 id="headerTitle">The Stewart Family</h1>
+
+  <nav>
+    <ul class="menu-list">
+      <li class="menu-item"><a href="../../index.html">All 7</a></li>
+      <li class="menu-dropdown menu-active"> <!--Trever-->
+        <a href="../trever/trever.html" class="dropbtn">Trever</a>
+        <div class="menu-dropdown-content">
+          <a href="../trever/trever-projects.html">Projects</a>
+          <a href="../trever/trever-wishlist.html">Wish List</a>
+        </div>
+      <li class="menu-dropdown"> <!--Amber-->
+        <a href="../amber/amber.html" class="dropbtn">Amber</a>
+        <div class="menu-dropdown-content">
+          <a href="../amber/amber-wishlist.html">Wish List</a>
+        </div>
+      </li>
+      <li class="menu-dropdown"> <!--Ayana-->
+        <a href="../ayana/ayana.html" class="dropbtn">Ayana</a>
+        <div class="menu-dropdown-content">
+          <a href="../ayana/ayana-wishlist.html">Wish List</a>
+        </div>
+      </li>
+      <li class="menu-dropdown"> <!--Asher-->
+        <a href="../asher/asher.html" class="dropbtn">Asher</a>
+        <div class="menu-dropdown-content">
+          <a href="../asher/asher-wishlist.html">Wish List</a>
+        </div>
+      </li>
+      <li class="menu-dropdown"> <!--Kellen-->
+        <a href="../kellen/kellen.html" class="dropbtn">Kellen</a>
+        <div class="menu-dropdown-content">
+          <a href="../kellen/kellen-wishlist.html">Wish List</a>
+        </div>
+      </li>
+      <li class="menu-dropdown"> <!--Xander-->
+        <a href="../xander/xander.html" class="dropbtn">Xander</a>
+        <div class="menu-dropdown-content">
+          <a href="../xander/xander-wishlist.html">Wish List</a>
+        </div>
+      </li>
+      <li class="menu-dropdown"> <!--Piper-->
+        <a href="../piper/piper.html" class="dropbtn">Piper</a>
+        <div class="menu-dropdown-content">
+          <a href="../piper/piper-wishlist.html">Wish List</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+<div id="content">
     <section>
         <h1> Hobbies </h1>
         <p>
             Over the years, I have taken an interest in many different hobbies.  It would be truthful to say that I want to try everything though I only stick with a few.  Currently, I am interested in the following hobbies:
-            <!-- <ul>
-                <li><details><summary>Electronics/Programming</summary>
-                    <ul>
-                        <li>Arduino - project design, development, and programming.</li>
-                        <li>Raspberry Pi - Mostly copying others work at this point.</li>
-                        <li>C# - Writing small application that make my life simpler at work.  Currently learning to use Xamairin to write cross-platform mobile apps.</li>
-                        <li>HTML5 - I am learning HTML5 in order to make my own websites.</li>
-                    </ul>
-                </details></li>
-                <li><details><summary>RC Trucks</summary>
-                    I enjoy to drive my RC trucks.  I currently own two monster trucks (one nitro and one electric), a stadium truck, and a small rock crawler.  Unfortunately, since I have moved to Texas I haven't been able to find that magical spot that makes driving exciting.  Most of the areas that I have found are pretty much a grassy field with little to no obstacles.  Hopefully I will find a cool spot soon to get out and drive more.
-                </details></li>
-            </ul> -->
+
             <details><summary style="font-size:120%">Electronics/Programming</summary>
                     <ul>
                         <li>Arduino - project design, development, and programming.</li>
@@ -49,5 +82,6 @@
             </details></li>
         </p>
     </section>
+</div>
 </body>
 </html>
